@@ -1,0 +1,70 @@
+<div class="col-md-12 navbar-brand navbar navbar-inverse navbar-static-top" style="margin-bottom: 0;">
+    <span class="white_text">College Management System</span>
+</div>
+
+<div class="col-md-12" style="padding: 10px 15px;">
+    <p><i class="fa fa-dashboard fa-fw"></i> Dashboard</p> 
+</div>
+
+<nav class="navbar-default sidebar col-md-3" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+           
+        <ul class="nav navbar-nav side-nav display_grid">
+            <li><a href="../profile/view.php"><i class="fa fa-fw fa-star"></i> Profile</a></li>
+            
+            <li><a href="../attendance/enter.php"><i class="fa fa-fw fa-book"></i> Attendance</a></li>
+
+            <li>
+                <a href="#" data-toggle="collapse" data-target="#internal-menu">
+                    <i class="fa fa-fw fa-star"></i> Internals <i class="fa fa-fw fa-angle-down pull-righ"></i>
+                </a>
+                <ul id="internal-menu" class="collapse"> 
+                    <li>
+                        <a href="../internals/add_marks.php">Add Marks</a>
+                    </li>
+                    <li>
+                        <a href="../internals/view_marks.php">View</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" data-toggle="collapse" data-target="#file-menu">
+                    <i class="fa fa-fw fa-star"></i> Materials <i class="fa fa-fw fa-angle-down pull-righ"></i>
+                </a>
+                <ul id="file-menu" class="collapse"> 
+                    <li>
+                        <a href="../materials/upload_material.php"> Upload Material</a>
+                    </li>
+                    <li>
+                        <a href="../materials/view_materials.php">View</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="#" data-toggle="collapse" data-target="#enq-menu"><i class="fa fa-fw fa-star"></i>  Enquiries <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                <ul id="enq-menu" class="collapse">
+                    <li><a href="../queries/answers.php"> View</a></li>
+                </ul>
+            </li>
+
+             
+            <li>
+                <a href="../../gates/logout.php"><i class="fa fa-fw fa-power-off"></i> Logout<span class="fa arrow"></span></a>
+            </li>
+
+        </ul>      				  
+    </div>          
+</nav>
