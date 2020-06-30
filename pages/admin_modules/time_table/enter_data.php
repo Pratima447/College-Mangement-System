@@ -61,14 +61,17 @@
     }
     include('../../common/header.html');
 
-    // $cname = 'Bsc';
-    // $sem = 'semester_1';
-
 ?>
 
 <body>
     <div id="wrapper">
-        
+        <div class="col-md-12 navbar-brand navbar navbar-inverse navbar-static-top" style="margin-bottom: 0;">
+            <img src="../../../public/uploads/logo.jpg" class="col-md-2" alt="STJIT logo" style="width: 8%;">
+            <center>
+                <p class="white_text header_title">Sri Taralabalu Jagadguru Institute of Technology</p>
+                <p class="white_text">College Management System</p>
+            </center>
+        </div>
     </div>
     <form action="" method="POST">
         <input type="hidden" id="cid" name="cid" value="<?php echo $cid; ?>"/>
@@ -79,12 +82,14 @@
         <div id="page-wrapper"  class="col-md-12">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="page-header"> <?php echo strtoupper("welcome"." ". $_COOKIE['user']);?></h4>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h4>Time Table Section</h4>
+                    <h4 class="page-header p_15"> <?php echo strtoupper("welcome"." ". $_COOKIE['user']);?></h4>
+                    <div class="col-md-5">
+                            <a class="p_15" href="../time_table/request_info.php">Back</a>
                         </div>
-                       
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4 class="font_w">Time Table Section</h4>
+                        </div>
                     </div>
                     <center class="title_text">
                         <div class="">Course - <?php echo $_GET['course'] ?> </div>
@@ -136,7 +141,6 @@
                                                     <?php
                                                         for($hours = 0; $hours < 24; $hours++) 
                                                             for($mins = 0; $mins < 60; $mins+=30)
-                                                            // echo '<option value='.str_pad($hours,2,'0',STR_PAD_LEFT).':'.str_pad($mins,2,'0',STR_PAD_LEFT).':00>'.str_pad($hours,2,'0',STR_PAD_LEFT).':'.str_pad($mins,2,'0',STR_PAD_LEFT).'</option>';
                                                             echo '<option value='.$hours.str_pad($mins,2,'0',STR_PAD_LEFT).'00>'.str_pad($hours,2,'0',STR_PAD_LEFT).':'.str_pad($mins,2,'0',STR_PAD_LEFT).'</option>';
 
                                                    ?>
@@ -153,7 +157,6 @@
                                                     </select>
                                                 </div>
                                                 <br><br>
-                                                <!-- <input type="text" id="sub_<?php echo $i ?>" class="form-control" placeholder="Subject <?php echo $i ?>" required/> -->
                                                 <select name="sub_<?php echo $i ?>" id="sub_<?php echo $i ?>" class="form-control get_subjects" required>
                                                     <option value="">Select Subject</option>
                                                     

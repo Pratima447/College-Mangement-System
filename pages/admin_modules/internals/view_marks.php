@@ -19,7 +19,7 @@
         <div id="wrapper">
             <?php include('../../common/side_menu.html') ?>
         </div>
-        <div id="page-wrapper" class="col-md-7">
+        <div id="page-wrapper" class="col-md-9">
             <div class="row">
                 <div class="col-lg-12">
                     <h4 class="page-header"> <?php echo strtoupper("welcome"." ". $_COOKIE['user']);?></h4>
@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Add Internal Marks</div>
+                        <div class="panel-heading">View Internal Marks</div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">

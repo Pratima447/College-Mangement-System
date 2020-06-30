@@ -22,7 +22,7 @@
 <body>
     <form method="post" >
         <div id="wrapper">
-            <?php include('../../common/side_lect_menu.html') ?>
+            <?php include('../../common/side_stud_menu.html') ?>
             <div id="page-wrapper" class="col-md-7">
                 <div class="row">
                     <div class="col-lg-12">

@@ -56,6 +56,7 @@
                     <td>'.$row[0].'</td>
                     <td>'.$row[2].'</td>
                     <td>'.$row[3].'</td>
+                    <td>Avg</td>
                     <td>'.$row[4].'</td>
                 </tr>';
             

@@ -236,10 +236,10 @@
                                                     <span id="invalid_mob_msg" class="font_12 font_w_600 display_n p_l" style="font-size:11px;color:red">Invalid mobile number</span>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <label>Email Id</label>
+                                                    <label>Email Id<span id="" style="font-size:11px;color:red">*</span></label>
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input class="form-control" type="email" name="email_id" id="email" onkeyup="checkEmailValidation(); return false;">
+                                                    <input class="form-control" type="email" name="email_id" id="email" required  onkeyup="checkEmailValidation(); return false;">
                                                     <span id="invalid_email_msg" class="font_12 font_w_600 display_n p_l" style="font-size:11px;color:red">Invalid Email Id</span>
                                                 </div>
                                                 <br>
@@ -290,13 +290,13 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                            <th>&nbsp;&nbsp;&nbsp;&nbsp;Board<span id="" style="font-size:11px;color:red">*</span></th>
+                                            <th class="col-md-3">Board<span id="" style="font-size:11px;color:red">*</span></th>
                 
-                                            <th>&nbsp;&nbsp;&nbsp;&nbsp;Roll No</th>
+                                            <th class="col-md-3">Roll No</th>
                                             
-                                            <th>&nbsp;&nbsp;&nbsp;&nbsp;Year Of Passing<span id="" style="font-size:11px;color:red">*</span></th>
+                                            <th class="col-md-3">Year Of Passing<span id="" style="font-size:11px;color:red">*</span></th>
                                                                             
-                                            <th>&nbsp;&nbsp;&nbsp;&nbsp;Percentage</th>
+                                            <th class="col-md-3">Percentage</th>
 
                                             </tr>
                                         </thead>
@@ -309,19 +309,19 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="col-lg-6">
+                                                    <div class="col-lg-12">
                                                         <input class="form-control" type="text" name="roll_no_1">
                                                     </div>
                                                 </td>
                         
                                                 <td>
-                                                    <div class="col-lg-6">
+                                                    <div class="col-lg-12">
                                                         <input required class="form-control" type="text" name="pass_year_1">
                                                     </div>
                                                 </td>
                                                                 
                                                 <td>
-                                                    <div class="col-lg-6">
+                                                    <div class="col-lg-12">
                                                         <input class="form-control" type="text" name="percent_1">
                                                     </div>
                                                 </td>
@@ -334,17 +334,17 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="col-lg-6">
+                                                    <div class="col-lg-12">
                                                         <input class="form-control" type="text" name="roll_no_2">
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="col-lg-6">
+                                                    <div class="col-lg-12">
                                                         <input required class="form-control" type="text" name="pass_year_2">
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="col-lg-6">
+                                                    <div class="col-lg-12">
                                                         <input class="form-control" type="text" name="percent_2">
                                                     </div>
                                                 </td>

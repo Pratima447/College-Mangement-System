@@ -13,7 +13,7 @@
 
 ?>
 
-<body>
+<body id="gates">
     <div class="container">
         <br><br><br><br>
             <div class="col-md-4 col-md-offset-4">
