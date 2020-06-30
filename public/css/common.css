@@ -1,8 +1,22 @@
 body {
-    background:url('../../../public/uploads/coll_back.jpg');
+    background: #d2c9c987;
+    overflow-x: hidden;
+}
+#gates {
+    background:url('../../../public/uploads/stjit_back.jpg');
     background-position: center;
 }
-
+.navbar-brand {
+    height: auto !important;
+}
+.page-header {
+    margin: 0;
+}
+.header_title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.5;
+}
 #login_form {
     opacity: 1;
     background: rgba(16, 15, 15, 0.65);
@@ -52,6 +66,12 @@ body {
     color: blue;
     font-weight: 600;
 }
+.font_w {
+    font-weight: 600;
+}
+.font_17 {
+    font-size: 17px;
+}
 textarea {
     white-space: normal;
     text-align: left;
@@ -68,6 +88,9 @@ ul li a {
 }
 .white_text {
     color: #ffffff;
+}
+.p_15 {
+    padding: 15px;
 }
 .m_t_30 {
     margin-top: 30%;
@@ -86,6 +109,10 @@ ul li a {
     line-height: 2;
 }
 .panel-default>.panel-heading {
-    background-color: #829ce6;
-    border-color: #829ce6;
+    background-color: #2ebdbd;
+    border-color: #2ebdbd;
+}
+.panel-default>.panel-heading {
+    color: #fff;
+    font-weight: 600;
 }
