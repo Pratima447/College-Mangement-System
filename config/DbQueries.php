@@ -128,7 +128,27 @@ class DbQueries
         $db     = Database::getInstance();
         $mysqli = $db->getConnection();
 
+        // first check if any students have this course
+        $check_query = "SELECT cid from students where cid=?";
+        $stmt  = $mysqli->prepare($check_query);
+
+        if($stmt = $mysqli->prepare($check_query))
+        {
+            $stmt->bind_param('s',$c_id);
+            $stmt->execute();
+            echo "<script>alert('Cannot delete the course as Students data exists!')</script>";
+            echo "<script>window.location.href='view_courses.php'</script>";
+            return;
+        }
+        else
+        {
+            $error = $mysqli->errno . ' ' . $mysqli->error;
+    		echo $error;
+        }  
+
+        // Now delete the course
         $query = "DELETE from courses where cid=?";
+
         $stmt  = $mysqli->prepare($query);
 
         if($stmt = $mysqli->prepare($query))
