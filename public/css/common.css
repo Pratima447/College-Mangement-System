@@ -2,6 +2,10 @@ body {
     background: #d2c9c987;
     overflow-x: hidden;
 }
+.header {
+    background: #a99999;
+    border: #a99999;
+}
 #gates {
     background:url('../../../public/uploads/stjit_back.jpg');
     background-position: center;
@@ -16,6 +20,7 @@ body {
     font-weight: 700;
     font-size: 23px;
     line-height: 1.5;
+    margin-top: 1%;
 }
 #login_form {
     opacity: 1;
